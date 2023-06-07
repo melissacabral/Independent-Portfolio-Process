@@ -1,0 +1,305 @@
+/*colors
+#5B4150 purple
+#DA524A pink
+#FEBB49 yellow
+#6EBAA7 green
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,400,300,100);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body{
+	background-color:#FEFDFD;
+	font-family: 'Roboto Slab', Georgia, serif;
+	max-width:62.5em;
+	margin: 0 auto;
+	position: relative;
+	color: #392230;
+	overflow-x: hidden;
+}
+header{
+	background-color:#5B4150; /*purple*/
+	text-align: center;
+	color:#E7D1DE;
+	padding:1em;
+}
+header h1{
+	color:#FEFDFD;
+	font-size:1.5em;
+	text-shadow: 0 .12em 0 rgba(218,82,74,.4);
+}
+main{
+	margin:1em;
+}
+footer{
+	background-color: #5B4150;/*dk purple*/
+	color:#FEFDFD;
+	text-align: center;
+	padding: .5em;
+}
+footer a{
+	color:#CBA5BF;
+	text-decoration: none;
+}
+nav h2{
+	display: none;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 1em;
+}
+nav ul li{
+	padding: 0;
+	margin: 0;
+}
+nav ul a:before{
+	display: block;
+	content: attr(data-icon);
+	background-color: rgba(255,255,255,.2);
+	border-radius: 300px;
+	position: absolute;
+	top:.45em;
+	line-height: 1.9em;
+	height:2em;
+	width:2em;
+	text-align: center;
+	font-family: Montserrat, Arial, sans-serif;
+	border:solid 2px #FEFDFD;
+}
+nav ul a{
+	display: block;
+	position: relative;
+	width:100%;
+	max-width: 320px;
+	color:#FEFDFD;
+	text-decoration: none;
+	text-align: center;
+	padding:.8em;
+	margin:0 auto;
+}
+main p{
+	line-height: 1.em;
+}
+main h1{
+	font-family: 'Roboto Slab', Georgia, serif;
+	font-weight: 300;
+	text-transform: inherit;
+	color:#DA524A;
+}
+main a{
+	color: #6EBAA7;
+	text-decoration: none;
+}
+.mentor{
+	margin: 4em 0;
+}
+.checkpoint{
+	margin: 1em 0;
+	padding: 0 0 1em 0
+}
+.checkpoint img{
+	display: none;
+}
+.checkpoint h2{
+	color:white;
+	padding: .5em;
+	margin: 0;
+}
+.checkpoint h2 b{
+	text-transform: none;
+}
+.checkpoint h3{
+	text-align: left;
+	margin: .8em;
+	/*color: #8D416C;*/
+}
+.checkpoint p,
+.checkpoint ul{
+	margin: 1em;
+	padding: 0;
+}
+.checkpoint li{
+	position: relative;
+	list-style-type: none;
+	padding: 0 0 .5em  2em;
+	margin: 0;
+}
+.checkpoint li:before{
+	content:'';
+	width:1em;
+	height:1em;
+	display: block;
+	background-color: white;
+	opacity: .4;
+	position: absolute;
+	top:0;
+	left:0;
+	border-radius: 50px
+}
+.checkpoint li:after{
+	content: '\2714';/*check*/
+	position: absolute;
+	top:-.3em;
+	left:.15em;
+	color:#8D416C;
+	font-size: 1.2em;
+}
+.one h2{
+	background-color:#DA524A;/*pink*/
+}
+.two h2{
+	background-color:#FEBB49; /*yellow*/
+}
+.three h2{
+	background-color:#6EBAA7;/*green*/
+}
+.one{
+	background-color:#DA524A;/*pink*/
+}
+.two{
+	background-color:#FEBB49; /*yellow*/
+}
+.three{
+	background-color:#6EBAA7;/*green*/
+}
+main .one{
+	background-color:#E4827C;/*pink*/
+}
+main .two{
+	background-color:#FED289; /*yellow*/
+}
+main .three{
+	background-color:#92CBBD;/*green*/
+}
+nav ul a:hover,
+nav ul a:focus,
+nav ul a:active{
+	background-color:rgba(255,255,255,.2);
+}
+header p, 
+header abbr{
+	display: none;
+}
+/*type*/
+h1, h2, h3{
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	
+}
+.headshot{
+	margin:0 auto;
+	display: block;
+	border: solid 4px #FEBB49;
+	border-radius: 10000px;
+}
+@media only screen and (min-width : 540px){
+	header, footer{
+		background-image: url('img/ipp-icon-pattern.png');
+		background-position: left -50px;
+	}
+	header h1{
+		font-size:2em;
+	}
+	header p{
+		display: block;
+		font-size: 1.25em;
+	}
+	header b{
+font-weight: 700;
+	}
+	.headshot{
+		float: right;
+		margin:1em 2em 2em;
+		display: inline;
+	}
+	nav ul{
+		padding:0;
+	}
+	nav ul li{
+		display: block;
+		float:left;
+		width:30.3%;
+		margin:1em 1.5%;
+	}
+	nav ul a:before{
+		display: none;
+	}
+	main h1{
+		margin-top:.5em;
+	}
+}
+@media only screen and (min-width : 800px){
+	/*wide bars*/
+	.banner{
+		margin: 0px -2000px;
+		padding: 1em 2000px;
+	}
+	header h1{
+		font-size:3em;
+		padding:0 .5em;
+	}
+	header abbr{
+		display: block;
+		background-color:rgba(62,40,53,.7);
+		border:solid 2px #FEFDFD; 
+		width: 3em;
+		margin:1em auto;
+		padding:.25em;
+		text-shadow:none;
+		font-family: 'Roboto Slab', Georgia, serif;
+		font-weight:100;
+	}
+	nav h2{
+		display: block;
+	}
+	nav ul a:before{
+		display: block;
+	}
+	main{
+		font-size:110%;
+	}
+	main h1{
+		margin-top:1em;
+	}
+	.checkpoints{
+		overflow: hidden;
+	}
+	.checkpoint img{
+		display: inline-block;
+		float:right;
+		max-width:25%;
+		height: auto;
+	}
+	.checkpoints ul{
+		margin-bottom: 1em;
+	}
+	#one,
+	#two{
+		width:49%;
+		float:left;
+		margin-bottom: -2000px;
+		padding-bottom: 2000px;
+	}
+	#one{
+		margin-right: 2%;
+	}
+	#three{
+		clear: both;
+	}
+}
